@@ -9,11 +9,15 @@ require.config({
 		'home': 'component/home/home',
 		'mine': 'component/mine/mine',
 		'shopcar': 'component/shopcar/shopcar',
+		'css':'js/libs/angular-css.min'
 	},
 	shim: {
 		'uiRouter': {
 			deps: ['angular']
 		},
+        'css': {
+            deps: ['angular']
+        },
 		'gift':['uiRouter'],
 		'home':['uiRouter'],
 		'mine':['uiRouter'],
