@@ -8,10 +8,15 @@ define(['uiRouter'],function  () {
             .state("gift",{
                 url:"/gift",
                 templateUrl:"component/gift/gift.html",
-                controller:"giftCtrl"
+                controller:"giftCtrl",
+                css:"component/gift/gift.css",
             })
     })
     .controller("giftCtrl",["$scope",function ($scope) {
-        $scope.title="充值赠礼"
+        $scope.title="充值赠礼";
+        $scope.myVar=true;
+        $scope.toggle=function () {
+            $scope.myVar = !$scope.myVar;
+        }
     }])
 })
